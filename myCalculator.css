@@ -4,7 +4,7 @@ table {
     border: none;
     border-radius: 10px;
     padding: 0px 20px 20px;
-    background: cornsilk;
+    background: cornflowerblue;
     box-shadow: 2px;
     flex: 2px;
 }
@@ -31,7 +31,7 @@ input[type=button] {
     height: 60px;
     width: 60px;
     color: black;
-    background: grey;
+    background: lightgray;
     margin: 1px;
     border-radius: 8px;
     border: none;
