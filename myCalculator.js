@@ -44,7 +44,7 @@ const calculator = new Calculator(inputTextArea, answerTextArea)
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculator.appendNumber(button.innerHTML)
+        calculator.appendNumber(button.innerText)
         calculator.updateDisplay()
     })
 })
