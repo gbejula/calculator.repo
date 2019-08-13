@@ -16,7 +16,7 @@ class Calculator {
     }
 
     appendNumber(number) {
-
+        this.inputTextArea = number;
     }
 
     chooseOperations(operation) {
@@ -28,18 +28,23 @@ class Calculator {
     }
 
     updateDisplay() {
-
+        this.inputTextArea.innerText = this.inputTextArea
     }
 }
 
 
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationButtons = document.querySelectorAll('[data-operation]');
-const equalButtton = document.querySelector('[data-equals]');
+const equalButtton = document.querySelector('[data-equal]');
 const allclearButton = document.querySelector('[data-allclear]');
 const inputTextArea = document.querySelector('[data-input]')
 const answerTextArea = document.querySelector('[data-answer]')
 
 const calculator = new Calculator(inputTextArea, answerTextArea)
 
-numberButtons.forEach(button )
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.appendNumber(button.innerHTML)
+        calculator.updateDisplay()
+    })
+})
