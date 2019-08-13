@@ -10,6 +10,7 @@ table {
 }
 
 #input, #answer {
+    widows: 500px;
     height: 50px;
     font-size: 100%;
     text-align: right;
@@ -27,7 +28,9 @@ table {
     box-shadow: 2px 2px 2px black;
 }
 
-input[type=button] {
+$
+
+button {
     height: 60px;
     width: 60px;
     color: black;
@@ -38,7 +41,7 @@ input[type=button] {
 
 }
 
-input[type=button]:hover {
+button:hover {
     background: white;
     cursor: pointer;
 }
