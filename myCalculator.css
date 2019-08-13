@@ -28,7 +28,9 @@ table {
     box-shadow: 2px 2px 2px black;
 }
 
-$
+#input, #answer {
+    width: 260px;
+}
 
 button {
     height: 60px;
